@@ -1,158 +1,76 @@
-:root{
-    --pink: #f14e95;
-    --bg: #2d2d2d;
-    --shadow: 0 2px 2px rgba(28, 28, 28, 0.5);
-}
-body{
-    font-size:1.2rem;
-    font-family: 'work sans', sans-serif;
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Undangan Mahmud & Husna</title>
 
-}
-.hero {
-    position: relative;
-    min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('img/latar.png') center/cover no-repeat;
-    color: rgb(146, 4, 84);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    }
-.hero img {
-    width: 70ch;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0;
-    margin-bottom: 1rem;
-}
-.hero h1 {
-    font-family: "Lobster", cursive;
-    font-size: 4rem;
-    margin-bottom: 1rem;
-}
-.hero h4 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-}
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-.hero a{
-    color: var(--pink);
-    background: white;
-}
-.hero a:hover{
-    background: var(--pink);
-    color: white;
-    transition: 0.3s ease;
-    box-shadow: var(--shadow);
-}   
-.undangan {
-    min-height: 100vh; /* full layar */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* tengah vertikal */
-    align-items: center; /* tengah horizontal */
-    text-align: center;
-}
-.undangan img {
-    width: 70ch;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0;
-    margin-bottom: 1rem;
-}
-.undangan h1 {
-    font-family: "Lobster", cursive;
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    color: var(--pink)
-}
-.undangan h4 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-}
-.undangan p {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-.undangan a{
-    color: var(--pink);
-    background: rgb(255, 255, 255);
-}
-.undangan a:hover{
-    color: white;
-    transition: 0.3s ease;
-    box-shadow: var(--shadow);
-}
-/* NAVBAR BAWAH */
-.bottom-nav {
-    position: fixed;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 420px;
-    background: white;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 5px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-    z-index: 999;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Parisienne&display=swap" rel="stylesheet">
 
-/* ITEM */
-.nav-item {
-    text-align: center;
-    text-decoration: none;
-    color: #888;
-    font-size: 12px;
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
-/* ICON */
-.nav-item span {
-    display: block;
-    font-size: 18px;
-}
+<body>
 
-/* ACTIVE */
-.nav-item.active {
-    color: #c08a8a;
-}
+<section class="undangan">
+    <div class="content d-flex flex-column align-items-center text-center">
+    <p class="save">Save The Date</p>
 
-/* HOVER */
-.nav-item:hover {
-    color: #a86c6c;
-}
-.nav-item span {
-    background: #f1dcdc;
-    padding: 10px;
-    border-radius: 50%;
-    margin-bottom: 5px;
-    display: inline-block;
-}
+    <img src="img/pengantin.png" class="pengantin">
 
-.nav-item.active span {
-    background: #c08a8a;
-    color: white;
-}
+    <h1 class="nama">Mahmud & Husna</h1>
 
-/*media query*/
-/* Laptop */
-@media (max-width: 992px) {
-    html{
-        font-size: 75%}
-}
-/*tablet*/
-@media (max-width: 768px) {
-    html{
-        font-size: 62.5%}
-}
-/*mobile phone*/
-@media (max-width: 576px) {
-    html{
-        font-size: 50%}
-}
+    <p class="tanggal">Sabtu, 30 Mei 2026</p>
+
+
+    <!-- COUNTDOWN -->
+<script src="https://cdn.logwork.com/widget/countdown.js"></script>
+<a href="https://logwork.com/countdown-a3sk"
+   class="countdown-timer"
+   data-timezone="Asia/Makassar"
+   data-textcolor="#000080"
+   data-date="2026-07-30 11:00"
+   data-background="#f14e95"
+   data-digitscolor="#ffffff"
+   data-unitscolor="#000000">
+   Save The Date
+</a>
+<!-- NAVBAR BOTTOM -->
+<div class="bottom-nav">
+    <a href="#" class="nav-item active">
+        <span>🏠</span>
+        <p>Sampul</p>
+    </a>
+    <a href="#mempelai" class="nav-item">
+        <span>❤️</span>
+        <p>Mempelai</p>
+    </a>
+    <a href="#acara" class="nav-item">
+        <span>📅</span>
+        <p>Acara</p>
+    </a>
+    <a href="#galeri" class="nav-item">
+        <span>🖼️</span>
+        <p>Galeri</p>
+    </a>
+    <a href="#ucapan" class="nav-item">
+        <span>💬</span>
+        <p>Ucapan</p>
+    </a>
+    <a href="#penutup" class="nav-item">
+        <span>📁</span>
+        <p>Penutup</p>
+    </a>
+</div>
+</div>
+
+</section>
+
+</body>
+
+</html>
