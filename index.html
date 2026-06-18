@@ -57,6 +57,25 @@
         document.getElementById('namaTamu').textContent = decodeURIComponent(nama);
     }
 </script>
+    <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    let nama = urlParams.get('to');
+
+    // tampilkan nama di cover
+    if (nama) {
+        nama = nama.replace(/\+/g, ' ');
+        document.getElementById('namaTamu').textContent = decodeURIComponent(nama);
+    }
+
+    // tombol redirect bawa nama tamu
+    document.getElementById('btnUndangan').addEventListener('click', function () {
+        if (nama) {
+            window.location.href = "undangan.html?to=" + encodeURIComponent(nama);
+        } else {
+            window.location.href = "undangan.html";
+        }
+    });
+</script>
 
 </body>
 
