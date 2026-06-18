@@ -31,7 +31,7 @@
             Dengan segala hormat, kami mengundang Bapak/Ibu/Saudara(i)
             untuk hadir dan memberikan doa terbaik di hari bahagia kami.
         </p>
-        <a href="#" id="btnUndangan" class="btn btn-undangan">Lihat Undangan</a>
+        <a href="undangan.html" class="btn btn-undangan">Lihat Undangan</a>
         <p class="note mt-3">
             Mohon maaf apabila ada kesalahan nama/gelar
         </p>
@@ -56,19 +56,11 @@
         nama = nama.replace(/\+/g, ' ');
         document.getElementById('namaTamu').textContent = decodeURIComponent(nama);
     }
-</script>
-    <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    let nama = urlParams.get('to');
-
-    // tampilkan nama di cover
-    if (nama) {
-        nama = nama.replace(/\+/g, ' ');
-        document.getElementById('namaTamu').textContent = decodeURIComponent(nama);
-    }
-
+    
     // tombol redirect bawa nama tamu
-    document.getElementById('btnUndangan').addEventListener('click', function () {
+    document.getElementById('btnUndangan').addEventListener('click', function (e) {
+        e.preventDefault(); // 🔥 ini penting!
+
         if (nama) {
             window.location.href = "undangan.html?to=" + encodeURIComponent(nama);
         } else {
@@ -76,6 +68,7 @@
         }
     });
 </script>
+ 
 
 </body>
 
