@@ -11,7 +11,7 @@ body{
 .hero {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)),
     url('img/latar.png') center/cover no-repeat;
     color: rgb(146, 4, 84);
     display: flex;
@@ -29,7 +29,8 @@ body{
 .hero h1 {
     font-family: "Lobster", cursive;
     font-size: 4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
+    margin-top: -4rem; /* hilangkan jarak atas */
 }
 .hero h4 {
     font-size: 3rem;
@@ -42,6 +43,7 @@ body{
 .hero a{
     color: var(--pink);
     background: white;
+    font-size: 1.5rem;
 }
 .hero a:hover{
     background: var(--pink);
@@ -49,6 +51,11 @@ body{
     transition: 0.3s ease;
     box-shadow: var(--shadow);
 }   
+.hero .deskripsi {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 .undangan {
     min-height: 100vh; /* full layar */
     display: flex;
@@ -56,19 +63,29 @@ body{
     justify-content: center; /* tengah vertikal */
     align-items: center; /* tengah horizontal */
     text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)),
+    url('img/latar.png') center/cover no-repeat;
+}
+.save-the-date {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    margin-top: -5rem; /* hilangkan jarak atas */
+    color: var(--pink);
+    font-family: "Lobster", cursive;
 }
 .undangan img {
     width: 70ch;
     height: auto;
     object-fit: cover;
     border-radius: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
 }
 .undangan h1 {
     font-family: "Lobster", cursive;
     font-size: 4rem;
     margin-bottom: 1rem;
-    color: var(--pink)
+    color: var(--pink);
+    margin-top: -3rem; /* hilangkan jarak atas */
 }
 .undangan h4 {
     font-size: 3rem;
@@ -87,6 +104,33 @@ body{
     transition: 0.3s ease;
     box-shadow: var(--shadow);
 }
+.pengantin {
+    width: 220px;
+    margin-bottom: 10px; /* kecilkan jarak ke bawah */
+}
+
+.nama {
+    margin-top: 0; /* hilangkan jarak atas */
+    margin-bottom: 10px;
+}
+.countdown-timer {
+    background: transparent !important;
+    display: block;
+    margin: 0 auto;
+}
+.Ar-rum {
+    width: 100%;             /* Mengisi lebar penuh */
+    margin: 0 !important;    /* Menghapus semua margin agar tidak ada celah */
+    padding: 40px 20px;      /* Atur padding sesuai kebutuhan */
+    box-sizing: border-box;
+    
+    /* Background */
+    background: url('img/latar text.png') center/cover no-repeat;
+    
+    /* Memastikan tidak ada celah di atas */
+    display: block;
+    margin-top: 0 !important;
+}
 /* NAVBAR BAWAH */
 .bottom-nav {
     position: fixed;
@@ -102,6 +146,8 @@ body{
     padding: 10px 5px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.15);
     z-index: 999;
+    border: 0;
+    font-size: 4%;
 }
 
 /* ITEM */
@@ -135,9 +181,65 @@ body{
     display: inline-block;
 }
 
+.bottom-nav {
+    max-width: 420px; /* biar tetap kecil walau layar besar */
+}
 .nav-item.active span {
     background: #c08a8a;
     color: white;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+textarea {
+    width: 80%;
+    height: 80px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #c08a8a;
+    color: white;
+    border-radius: 8px;
+}
+.nav-item p {
+    font-size: 12px; /* kunci utama */
+    margin: 0;
+    display: none;
+}
+
+/* efek zoom keluar */
+.zoom-out {
+    animation: zoomOut 0.6s ease forwards;
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        filter: blur(0);
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+        filter: blur(5px);
+    }
 }
 
 /*media query*/
@@ -155,4 +257,26 @@ body{
 @media (max-width: 576px) {
     html{
         font-size: 50%}
+}
+/* Default (HP) */
+.nav-item p {
+    font-size: 10px;
+}@media (min-width: 992px) {
+    .nav-item p {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .nav-item p {
+        font-size: 11px;
+    }
+}
+
+/* Laptop / Desktop */
+@media (min-width: 992px) {
+    .nav-item p {
+        font-size: 12px;
+    }
 }
