@@ -30,8 +30,9 @@
         <p class="deskripsi">
             Dengan segala hormat, kami mengundang Bapak/Ibu/Saudara(i)
             untuk hadir dan memberikan doa terbaik di hari bahagia kami.
+            
         </p>
-        <a href="undangan.html" class="btn btn-undangan">Lihat Undangan</a>
+        <a href="#" id="btnUndangan" class="btn btn-undangan">Lihat Undangan</a>
         <p class="note mt-3">
             Mohon maaf apabila ada kesalahan nama/gelar
         </p>
@@ -56,16 +57,20 @@
         nama = nama.replace(/\+/g, ' ');
         document.getElementById('namaTamu').textContent = decodeURIComponent(nama);
     }
-    
-    // tombol redirect bawa nama tamu
-    document.getElementById('btnUndangan').addEventListener('click', function (e) {
-        e.preventDefault(); // 🔥 ini penting!
 
-        if (nama) {
-            window.location.href = "undangan.html?to=" + encodeURIComponent(nama);
-        } else {
-            window.location.href = "undangan.html";
-        }
+    document.getElementById('btnUndangan').addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // tambahkan animasi ke body
+        document.body.classList.add("zoom-out");
+
+        setTimeout(() => {
+            if (nama) {
+                window.location.href = "undangan.html?to=" + encodeURIComponent(nama);
+            } else {
+                window.location.href = "undangan.html";
+            }
+        }, 600); // harus sama dengan durasi animasi
     });
 </script>
  
