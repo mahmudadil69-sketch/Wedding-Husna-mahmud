@@ -6,6 +6,7 @@
 body{
     font-size:1.2rem;
     font-family: 'work sans', sans-serif;
+    margin: 0;
 
 }
 .hero {
@@ -107,6 +108,34 @@ body{
 .pengantin {
     width: 220px;
     margin-bottom: 10px; /* kecilkan jarak ke bawah */
+    transform-origin: center bottom;
+    animation: pengantinMasuk 1.2s ease-out both, pengantinMelayang 4s ease-in-out 1.2s infinite;
+    will-change: transform, opacity;
+}
+
+.pengantin:hover {
+    animation-play-state: paused;
+    transform: translateY(-8px) scale(1.04);
+}
+
+@keyframes pengantinMasuk {
+    0% {
+        opacity: 0;
+        transform: translateY(35px) scale(0.94);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes pengantinMelayang {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-12px) rotate(-1deg);
+    }
 }
 
 .nama {
@@ -119,17 +148,75 @@ body{
     margin: 0 auto;
 }
 .Ar-rum {
-    width: 100%;             /* Mengisi lebar penuh */
-    margin: 0 !important;    /* Menghapus semua margin agar tidak ada celah */
-    padding: 40px 20px;      /* Atur padding sesuai kebutuhan */
+    width: 100%;
+    padding: 80px clamp(36px, 8vw, 90px);
+    position: relative;
     box-sizing: border-box;
-    
-    /* Background */
+    top: -10px;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.7;
+    font-size: 20px;
+    text-align: center;
+    margin: -0 !important;
+
     background: url('img/latar text.png') center/cover no-repeat;
-    
-    /* Memastikan tidak ada celah di atas */
+}
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.mempelai {
+    background:url('img/latar.png') center/cover no-repeat;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 30px;
+
+}
+.mempelai h2 {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 500;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 28px;
+    margin-bottom: 50px;
+}
+.mempelai .basmalah {
     display: block;
-    margin-top: 0 !important;
+    font-size: 1.7rem;
+    line-height: 1.8;
+    margin: 18px auto 22px;
+    padding: 0 28px;
+}
+.mempelai .row:nth-of-type(2) p {
+    padding: 0 28px;
+}
+.mempelai .pengantin {
+    width: min(320px, 78vw);
+    margin-bottom: 0;
+}
+.mempelai h3 {
+    font-family: "Lobster", cursive;
+    font-size: 3.2rem;
+    color: var(--pink);
+    margin-top: -80px;
+    margin-bottom: 10px;
+}
+.mempelai p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+.mempelai .orang-tua {
+    line-height: 1.7;
+    margin-top: 14px;
+    margin-bottom: 56px;
+}
+.card {
+    border-radius: 15px;
+    border: none;
 }
 /* NAVBAR BAWAH */
 .bottom-nav {
@@ -278,5 +365,14 @@ button {
 @media (min-width: 992px) {
     .nav-item p {
         font-size: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pengantin,
+    .pengantin:hover,
+    .zoom-out {
+        animation: none;
+        transform: none;
     }
 }
