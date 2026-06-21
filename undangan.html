@@ -6,13 +6,12 @@
     <title>Undangan Mahmud & Husna</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-    
-    </style>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Parisienne&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=6">
 </head>
 
 <body>
@@ -121,65 +120,449 @@
   </div>
 </section>
 
-<section id="acara" class="section">
+<section id="acara" class="section acara">
+    <div class="pengantar">
+        <p>
+        Dengan segala kerendahan hati, kami mengundang Bapak/Ibu/Saudara/i
+        untuk hadir dan memberikan doa restu pada acara pernikahan kami.
+        </p>
+    </div>
+
     <h2>Acara</h2>
 
-    <div class="card row justify-content-center">
-        <h3>Akad Nikah</h3>
-        <p>Sabtu, 30 Mei 2026</p>
-        <p>Pukul 09.00 WIB</p>
+    <div class="acara-cards">
+        <div class="card acara-card row justify-content-center">
+            <h3>Akad Nikah</h3>
+            <p>Sabtu, 30 Mei 2026</p>
+            <p>Pukul 09.00 WIB</p>
+            <p>Gedung Serbaguna</p>
+
+            <div class="map-preview">
+                <iframe
+                    title="Lokasi akad nikah"
+                    src="https://www.google.com/maps?q=Gedung%20Serbaguna&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <a class="map-cover" href="https://www.google.com/maps/search/?api=1&query=Gedung%20Serbaguna" target="_blank" rel="noopener" aria-label="Buka lokasi akad di Google Maps"></a>
+            </div>
+
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Gedung%20Serbaguna" target="_blank" rel="noopener">
+                Buka Lokasi Akad
+            </a>
+        </div>
+
+        <div class="card acara-card row justify-content-center">
+            <h3>Resepsi</h3>
+            <p>Sabtu, 30 Mei 2026</p>
+            <p>Pukul 11.00 WIB - Selesai</p>
+            <p>Gedung Serbaguna</p>
+
+            <div class="map-preview">
+                <iframe
+                    title="Lokasi resepsi"
+                    src="https://www.google.com/maps?q=Gedung%20Serbaguna&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <a class="map-cover" href="https://www.google.com/maps/search/?api=1&query=Gedung%20Serbaguna" target="_blank" rel="noopener" aria-label="Buka lokasi resepsi di Google Maps"></a>
+            </div>
+
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Gedung%20Serbaguna" target="_blank" rel="noopener">
+                Buka Lokasi Resepsi
+            </a>
+        </div>
+    </div>
+</section>
+<section id="nasehat" class="section nasehat">
+    <div class="nasehat-pengantar">
+        <p>
+            Semoga beberapa nasihat sederhana ini menjadi pengingat untuk saling menjaga,
+            saling memahami, dan membangun rumah tangga dengan penuh kasih sayang.
+        </p>
     </div>
 
-    <div class="card row justify-content-center">
-        <h3>Resepsi</h3>
-        <p>Pukul 11.00 WIB - Selesai</p>
-        <p>Gedung Serbaguna</p>
+    <div class="nasehat-galeri">
+        <h2>Nasehat Pernikahan</h2>
+        <div class="nasehat-slider" aria-label="Galeri nasehat pernikahan">
+            <figure class="nasehat-slide">
+                <img src="img/acmc 1.jpg" alt="Nasehat pernikahan 1">
+            </figure>
+            <figure class="nasehat-slide">
+                <img src="img/acmc 2.jpg" alt="Nasehat pernikahan 2">
+            </figure>
+            <figure class="nasehat-slide">
+                <img src="img/acmc 3.jpg" alt="Nasehat pernikahan 3">
+            </figure>
+            <figure class="nasehat-slide">
+                <img src="img/acmc 4.jpg" alt="Nasehat pernikahan 4">
+            </figure>
+            <figure class="nasehat-slide">
+                <img src="img/acmc 5.jpg" alt="Nasehat pernikahan 5">
+            </figure>
+            <figure class="nasehat-slide">
+                <img src="img/acmc 6.jpg" alt="Nasehat pernikahan 6">
+            </figure>
+            <figure class="nasehat-slide">
+                <img src="img/acmc 7.jpg" alt="Nasehat pernikahan 7">
+            </figure>
+            <figure class="nasehat-slide">
+                <img src="img/acmc 8.jpg" alt="Nasehat pernikahan 8">
+            </figure>
+            <figure class="nasehat-slide">
+                <img src="img/acmc 9.jpg" alt="Nasehat pernikahan 9">
+            </figure>
+            <button class="nasehat-prev">❮❮</button>
+            <button class="nasehat-next">❯❯</button>
+        </div>
+        <div class="nasehat-dots" aria-label="Navigasi slide nasehat">
+            <button class="nasehat-dot active" type="button" aria-label="Lihat nasehat 1" data-slide="0"></button>
+            <button class="nasehat-dot" type="button" aria-label="Lihat nasehat 2" data-slide="1"></button>
+            <button class="nasehat-dot" type="button" aria-label="Lihat nasehat 3" data-slide="2"></button>
+            <button class="nasehat-dot" type="button" aria-label="Lihat nasehat 4" data-slide="3"></button>
+            <button class="nasehat-dot" type="button" aria-label="Lihat nasehat 5" data-slide="4"></button>
+            <button class="nasehat-dot" type="button" aria-label="Lihat nasehat 6" data-slide="5"></button>
+            <button class="nasehat-dot" type="button" aria-label="Lihat nasehat 7" data-slide="6"></button>
+            <button class="nasehat-dot" type="button" aria-label="Lihat nasehat 8" data-slide="7"></button>
+            <button class="nasehat-dot" type="button" aria-label="Lihat nasehat 9" data-slide="8"></button>
+        </div>
     </div>
 </section>
 
-<section id="nasehat" class="section">
-    <div class="card row justify-content-center">
-        
-    <h2>Nasehat</h2>
-
+<section id="adab" class="section adab">
+    <div class="adab-pengantar">
     <p>
-        "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
-        untukmu pasangan hidup dari jenismu sendiri..."
+        Sebagai bentuk ikhtiar dalam menjaga keberkahan acara ini, kami juga menyampaikan beberapa adab yang diharapkan dapat diperhatikan oleh para tamu undangan.
     </p>
-
-    <p><i>(QS. Ar-Rum: 21)</i></p>
-</section>
-
-<section id="adab" class="section">
+    </div>
     <h2>Adab Menghadiri Undangan</h2>
 
-    <ul>
-        <li>Berpakaian sopan dan menutup aurat</li>
-        <li>Mendoakan kedua mempelai</li>
-        <li>Tidak berlebihan dalam makan</li>
-        <li>Menjaga adab dan akhlak</li>
-    </ul>
+    <div class="adab-list">
+        <article class="adab-item">
+            <img src="img/adab 1.png" alt="Icon waktu sholat">
+            <p>Perhatikan Waktu Sholat</p>
+        </article>
+        <article class="adab-item">
+            <img src="img/adab 2.png" alt="Icon mendoakan mempelai">
+            <p>Mendoakan Kedua Mempelai</p> 
+        </article>
+        <article class="adab-item">
+            <img src="img/adab 3.png" alt="Icon makan">
+            <p>Memperhatikan Adab Makan & Minum</p>
+        </article>
+        <article class="adab-item">
+            <img src="img/adab 4.png" alt="Icon berpakaian sopan">
+            <p>Berpakaian Sopan dan Menutup Aurat</p>
+        </article>
+        <article class="adab-item">
+            <img src="img/adab 5.png" alt="Icon berbicara">
+            <p>Berbicara Sopan dan Tidak Menyinggung</p>
+        </article>
+        <article class="adab-item">
+            <img src="img/adab 6.png" alt="Icon menjaga kebersihan">
+            <p>Menjaga kebersihan tempat acara</p>
+        </article>
+    </div>
 </section>
 
-<section id="ucapan" class="section">
-    <h2>Ucapan & Doa</h2>
+<section id="ucapan" class="section ucapan">
+    <div class="ucapan-pengantar">
+        <p>
+            Kami sangat menghargai setiap doa dan ucapan baik yang diberikan untuk kami. 
+            Silakan tulis ucapan dan doa terbaik Anda untuk kami di bawah ini.
+        </p>
+    </div>
+    <h2>Doa untuk Kedua Mempelai</h2>
+    <img src="img/pengantin.png" alt="Gambar mempelai" class="pengantin mb-3">
+    <h1>Mahmud & Husna</h1>
+    <h3>بَارَكَ اللَّهُ لَكَ، وَبَارَكَ عَلَيْكَ، وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</h3>
+    <h4>Semoga Allah memberkati kalian, memberkati atas kalian, dan menyatukan kalian dalam kebaikan.
+        <br><i>(HR. Bukhari & Muslim)</i>
+    </h4>
 
-    <textarea placeholder="Tulis doa terbaik..."></textarea>
-    <br>
-    <button>Kirim</button>
+
+    <div class="ucapan-form">
+        <input type="text" id="nama" placeholder="Nama Anda">
+        <textarea id="pesan" placeholder="Tulis doa terbaik..."></textarea>
+        <button onclick="kirimUcapan()">Kirim</button>
+    </div>
+    <div id="loading"></div>
+
+    <div id="list-ucapan"></div>
+
+    <div class="rekening-box">
+    <p><b>💳 Rekening Donasi / Amplop Digital</b></p>
+
+    <div class="rekening-item">
+        <span id="no-rek">1234567890 (BCA - Nama Kamu)</span>
+        <button onclick="salinRekening()">Salin</button>
+    </div>
+
 </section>
 
-<section id="penutup" class="section">
-    <h2>Terima Kasih</h2>
+<section id="penutup" class="section penutup">
+    <div class="penutup-pengantar">
+        <p>
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.
+        </p>
+    </div>
 
-    <p>
-        Merupakan suatu kehormatan dan kebahagiaan bagi kami
-        apabila Bapak/Ibu/Saudara/i berkenan hadir.
-    </p>
+    <img src="img/pengantin.png" alt="Gambar mempelai" class="pengantin mb-3">
+    <h1>Mahmud & Husna</h1>
+    <h2>Keluarha Besar Mempelai Peria</h2>
+    <h3>Bapak fulan dan <br> Ibu Fulana</h3>
+    <h2>Keluarha Besar Mempelai Wanita</h2>
+    <h3>Bapak fulan dan <br> Ibu Fulana</h3>
 
-    <h3>Wassalamu'alaikum Warahmatullahi Wabarakatuh</h3>
+    <div class="penutup-wrap">
+    <div class="penutup-card">
+        <h3>✨ Terima Kasih</h3>
+
+        <p>
+            Jika Anda ingin mengundang atau membuat undangan digital seperti ini, 
+            silakan hubungi kami melalui kontak di bawah ini.
+        </p>
+
+        <div class="contact-box">
+            <a href="https://wa.me/6281234567890" target="_blank">
+                📱 WhatsApp
+            </a>
+
+            <a href="https://instagram.com/usernamekamu" target="_blank">
+                📷 Instagram
+            </a>
+        </div>
+    </div>
+</div>
 </section>
 
+<audio id="musik" loop>
+    <source src="mp3/يا سكن النفس أجمل أنشودة رومانسية (بدون إيقاع).mp3" type="audio/mpeg">
+</audio>
+
+<!-- tombol floating -->
+<button class="music-btn" onclick="toggleMusic()" id="musicBtn">
+    🎵 OFF
+</button>
+
+<script>
+    const nasehatSlider = document.querySelector('.nasehat-slider');
+    const nasehatSlides = document.querySelectorAll('.nasehat-slide');
+    const nasehatDots = document.querySelectorAll('.nasehat-dot');
+
+    if (nasehatSlider && nasehatSlides.length && nasehatDots.length) {
+        const setActiveDot = (index) => {
+            nasehatDots.forEach((dot, dotIndex) => {
+                dot.classList.toggle('active', dotIndex === index);
+            });
+        };
+
+        nasehatDots.forEach((dot) => {
+            dot.addEventListener('click', () => {
+                const index = Number(dot.dataset.slide);
+                nasehatSlides[index].scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'nearest',
+                    inline: 'center'
+                });
+                setActiveDot(index);
+            });
+        });
+
+        nasehatSlider.addEventListener('scroll', () => {
+            const slideWidth = nasehatSlides[0].getBoundingClientRect().width;
+            const gap = 16;
+            const index = Math.round(nasehatSlider.scrollLeft / (slideWidth + gap));
+            setActiveDot(Math.max(0, Math.min(index, nasehatDots.length - 1)));
+        });
+    }
+    const prevBtn = document.querySelector('.nasehat-prev');
+    const nextBtn = document.querySelector('.nasehat-next');
+    if (prevBtn && nextBtn) {
+        nextBtn.addEventListener('click', () => {
+        nasehatSlider.scrollBy({ left: 300, behavior: 'smooth' });
+     });
+     prevBtn.addEventListener('click', () => {
+        nasehatSlider.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+    }
+</script>
+
+<!-- Firebase -->
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import {
+    getFirestore,
+    collection,
+    addDoc,
+    onSnapshot,
+    query,
+    orderBy,
+    doc,
+    updateDoc,
+    deleteDoc
+
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+// CONFIG KAMU
+const firebaseConfig = {
+  apiKey: "AIzaSyAnFtmRIk03HIxoR5PAgjvyLhmY8WFeeLY",
+  authDomain: "undagan-mahmud.firebaseapp.com",
+  projectId: "undagan-mahmud",
+};
+
+// INIT
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// 🔒 LIMIT 1 UCAPAN / DEVICE
+function sudahKirim() {
+    return localStorage.getItem("sudahKirim") === "true";
+
+}
+
+// 👀 LOADING
+function setLoading(status) {
+    document.getElementById("loading").style.display = status ? "block" : "none";
+}
+
+// KIRIM UCAPAN
+window.kirimUcapan = async function () {
+    if (sudahKirim()) {
+        alert("Kamu sudah mengirim ucapan 😊");
+        return;
+    }
+
+    setLoading(true);
+
+    const nama = document.getElementById("nama").value.trim();
+    const pesan = document.getElementById("pesan").value.trim();
+
+    if (!nama || !pesan) {
+        alert("Harap isi semua kolom");
+        setLoading(false);
+        return;
+    }
+
+    await addDoc(collection(db, "ucapan"), {
+        nama: nama,
+        pesan: pesan,
+        waktu: new Date(),
+        like: 0
+    });
+    localStorage.setItem("sudahKirim", "true");
+
+    document.getElementById("nama").value = "";
+    document.getElementById("pesan").value = "";
+    setLoading(false);
+};
+// ❤️ LIKE
+window.likeUcapan = async function (id, currentLike = 0) {
+    const ref = doc(db, "ucapan", id);
+    await updateDoc(ref, {
+        like: currentLike + 1
+    });
+};
+// 🗑️ DELETE (ADMIN)
+window.hapusUcapan = async function (id) {
+    if (!ADMIN) return;
+
+    if (confirm("Hapus ucapan ini?")) {
+        await deleteDoc(doc(db, "ucapan", id));
+    }
+};
+let ADMIN = false;
+
+if (localStorage.getItem("admin_login") === "true") {
+    ADMIN = true;
+}
+
+window.loginAdmin = function () {
+    const pin = prompt("PIN admin:");
+    
+    if (pin === "12345") {
+        localStorage.setItem("admin_login", "true");
+        ADMIN = true;
+        alert("Admin mode aktif");
+    } else {
+        alert("PIN salah");
+    }
+};
+
+window.logoutAdmin = function () {
+    localStorage.removeItem("admin_login");
+    ADMIN = false;
+    alert("Admin logout");
+};
+// TAMPILKAN REALTIME
+const q = query(collection(db, "ucapan"), orderBy("waktu", "desc"));
+
+onSnapshot(q, (snapshot) => {
+    const list = document.getElementById("list-ucapan");
+    const preview = document.getElementById("preview-ucapan");
+    list.innerHTML = "";
+
+    snapshot.forEach((docSnap) => {
+        const data = docSnap.data();
+        const id = docSnap.id;
+
+         // tampilkan semua ucapan
+        list.innerHTML += `
+            <div class="card-ucapan">
+                <h4>${data.nama}</h4>
+                <p>${data.pesan}</p>
+             <div class="ucapan-actions">
+                    <button onclick="likeUcapan('${id}', ${data.like || 0})">
+                        ❤️ ${data.like || 0}
+                    </button>
+
+                    ${ADMIN ? `<button onclick="hapusUcapan('${id}')">🗑️</button>` : ""}
+                </div>
+            </div>
+        `;
+    });
+});
+
+window.salinRekening = function () {
+    const text = document.getElementById("no-rek").innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+        alert("Rekening berhasil disalin ✅");
+    });
+};
+const penutup = document.querySelector(".penutup-wrap");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+        }
+    });
+});
+
+const musik = document.getElementById("musik");
+const btn = document.getElementById("musicBtn");
+
+let isPlaying = false;
+
+window.toggleMusic = function () {
+    if (isPlaying) {
+        musik.pause();
+        btn.innerHTML = "🎵 OFF";
+        btn.classList.remove("active");
+    } else {
+        musik.play().catch(err => {
+            console.log("Autoplay diblokir:", err);
+        });
+        btn.innerHTML = "🎶 ON";
+        btn.classList.add("active");
+    }
+    isPlaying = !isPlaying;
+}
+
+</script>
 
 </body>
 
